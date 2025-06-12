@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<section class="content-header">
+  <h1 style="color: white;">{{ player.name }} 분석</h1>
+</section>
+<section class="content">
+  <div class="row">
+    <div class="col-md-4">
+      {% if player.image_url %}
+        <img src="{{ player.image_url }}" class="img-fluid rounded" alt="{{ player.name }}">
+      {% endif %}
+    </div>
+    <div class="col-md-8">
+      {% if stats %}
+      <table class="table table-bordered table-dark">
+        <thead>
+          <tr><th>지표</th><th>수치</th></tr>
+        </thead>
+        <tbody>
+          {% for key, value in stats.items %}
+          <tr>
+            <td>{{ key|title }}</td>
+            <td>{{ value }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% endif %}
+
+      <h4 style="color: white; margin-top: 30px;">AI 분석 내용</h4>
+      <div class="card bg-dark text-white p-3 rounded">
+        <p style="white-space: pre-wrap;">{{ analysis_text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+
+

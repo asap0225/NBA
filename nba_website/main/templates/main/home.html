@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% load static %}
+<section class="content-header d-flex align-items-center">
+  <h1 class="page-title-with-icon">
+    <img src="{% static 'images/image2.png' %}" class="title-icon" alt="농구 아이콘">
+    <strong>선수 리스트</strong>
+  </h1>
+</section>
+
+<section class="content">
+  <div class="row">
+    {% for p in players %}
+    <div class="col-md-3">
+      <div class="card">
+        {# 이미지 구현 #}
+        {% if p.image_url %}
+        <img src="{{ p.image_url }}" class="card-img-top">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">{{ p.name }}</h5>
+          <a href="{% url 'player_analysis' p.id %}" class="btn btn-primary">ANAYSIS</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
