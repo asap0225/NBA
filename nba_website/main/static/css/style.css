@@ -1,0 +1,137 @@
+/* 카드 스타일 */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 카드 이미지 */
+.card-img-top {
+  aspect-ratio: 3 / 4; /* 3:4 비율 예시, 필요에 따라 조절 가능 */
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* 카드 타이틀 */
+.card-title {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: rgb(0, 0, 0) !important;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* 조정 가능 */
+}
+
+/* 기본 버튼 스타일 커스터마이징 */
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #004080;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #003d80;
+  border-color: #002f66;
+}
+
+/* 전체 콘텐츠 영역 배경 및 여백 */
+.content-wrapper {
+  padding: 30px;
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+/* content-header */
+.content-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* player_analysis 이미지 스타일 */
+.img-fluid.rounded {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 분석 텍스트 영역 */
+pre {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* 반응형 카드 레이아웃 조정 (작은 화면 대응) */
+@media (max-width: 768px) {
+  .col-md-3, .col-md-4, .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.page-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+body {
+  background-image: url('/static/images/image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.page-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white; /* ✅ 글자 흰색으로 */
+}
+
+/* content-header */
+.content-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white; /* ✅ 이 줄을 추가하세요 */
+}
+
