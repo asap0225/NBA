@@ -4,14 +4,14 @@ import requests
 import json
 
 LLAMA_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-LLAMA_API_KEY = "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"  # 보안상 생략했지만 실제론 전체 키 입력
+LLAMA_API_KEY = "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" 
 
 def llama_analysis(prompt):
     try:
         resp = requests.post(
             LLAMA_API_URL,
             json={
-                "model": "meta-llama/llama-3.3-8b-instruct:free",  # 더 높은 품질 모델 사용
+                "model": "meta-llama/llama-3.3-8b-instruct:free", 
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0.3,
             },
