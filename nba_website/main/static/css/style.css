@@ -14,7 +14,7 @@
 
 /* 카드 이미지 */
 .card-img-top {
-  aspect-ratio: 3 / 4; /* 3:4 비율 예시, 필요에 따라 조절 가능 */
+  aspect-ratio: 3 / 4;
   width: 100%;
   object-fit: cover;
   display: block;
@@ -37,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px; /* 조정 가능 */
+  height: 150px; 
 }
 
 /* 기본 버튼 스타일 커스터마이징 */
@@ -124,7 +124,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: white; /* ✅ 글자 흰색으로 */
+  color: white; 
 }
 
 /* content-header */
@@ -132,6 +132,6 @@ body {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: white; /* ✅ 이 줄을 추가하세요 */
+  color: white; 
 }
 
