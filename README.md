@@ -12,4 +12,5 @@ Player.objects.create(name="Russell Westbrook(#선수 이름)", position="PG(#�
 image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Russell_Westbrook_%28March_21%2C_2022%29_%28cropped%29.jpg/330px-Russell_Westbrook_%28March_21%2C_2022%29_%28cropped%29.jpg(#이미지)')
 
 #웹사이트 열기
-커맨드에 python manage.py runserver 입력하면 됩니다
+커맨드에 python manage.py runserver 입력하시고
+터미널에 뜬 http://127.0.0.1:8000/ 를 ctrl+좌클릭 하시면 됩니다.
