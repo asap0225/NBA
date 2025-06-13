@@ -1,7 +1,10 @@
 #초기 세팅
 pip install django matplotlib pandas openai requests 
 
-#선수 추가
+#LLM API 세팅
+views.py 파일 "PUT YOUR KEY"부분에 API키 입력하세요
+
+#웹사이트에 선수 추가하는 방법
 (#cmd)
 python manage.py shell
 from main.models import Player
