@@ -13,7 +13,7 @@ def llama_analysis(prompt):
             json={
                 "model": "meta-llama/llama-3.3-8b-instruct:free", 
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.3,
+                "temperature": 0.5,
             },
             headers={"Authorization": f"Bearer {LLAMA_API_KEY}"}
         )
