@@ -4,7 +4,7 @@ import requests
 import json
 
 LLAMA_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-LLAMA_API_KEY = "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" 
+LLAMA_API_KEY = "PUT YOUR KEY" 
 
 def llama_analysis(prompt):
     try:
